@@ -714,7 +714,6 @@ footer.copyright {
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.875rem;
     font-weight: 300;
-    padding: 6rem 2rem 3rem;
     border-radius: 3rem 3rem 0 0;
     margin-top: 3rem;
 }
@@ -730,8 +729,10 @@ footer.copyright .container {
 footer.cms-content + footer.copyright {
     margin-top: 0;
     border-radius: 0;
+}
+
+footer.cms-content + footer.copyright .container {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 3rem;
 }
 
 footer.copyright .brand {
