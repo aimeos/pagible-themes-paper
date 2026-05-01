@@ -245,14 +245,20 @@ header nav a {
     color: var(--pico-color);
     padding: 0.25rem 1rem;
     margin-inline-start: -1rem;
-    font-weight: 400;
-    font-size: 0.875rem;
-    transition: opacity 0.15s ease;
 }
 
-header nav a:hover,
-header nav a.active {
-    color: var(--pico-contrast);
+header nav a[role=button] {
+    background-color: var(--pico-contrast);
+    color: var(--pico-contrast-inverse);
+    border-color: var(--pico-contrast);
+    border-radius: 9999px;
+    margin-inline-start: 0;
+}
+
+header nav a[role=button]:hover {
+    background-color: var(--pico-contrast-hover);
+    border-color: var(--pico-contrast-hover);
+    color: var(--pico-contrast-inverse);
 }
 
 @media (max-width: 991px) {
@@ -711,7 +717,7 @@ footer.copyright .brand {
 }
 
 footer.copyright .brand img {
-    height: 1.5rem;
+    height: 3rem;
     filter: brightness(0) invert(1);
     vertical-align: middle;
     opacity: 0.5;
