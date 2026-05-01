@@ -42,7 +42,7 @@
         <link rel="preload" href="{{ cmstheme($page, 'fonts/inter-500.woff2') }}" as="font" type="font/woff2" crossorigin>
         <link href="{{ cmstheme($page, 'fonts.css') }}" rel="stylesheet">
 
-        <link href="{{ cmstheme($page, 'pico.min.css') }}" rel="stylesheet">
+        <link href="{{ cmstheme($page, 'pico.css') }}" rel="stylesheet">
         <link href="{{ cmstheme($page, 'cms.css') }}" rel="stylesheet">
         @stack('css')
 
