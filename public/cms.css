@@ -154,6 +154,8 @@ body > header {
     margin: auto;
     border-bottom: none;
     padding: 0.5rem 2rem;
+    position: relative;
+    z-index: 10;
 }
 
 header nav ol,
@@ -163,6 +165,13 @@ header nav ul {
 
 header nav > ul:not(.menu) > li {
     padding: var(--pico-nav-element-spacing-vertical) 0;
+}
+
+header nav > ul > li:last-of-type a {
+    background-color: var(--pico-primary);
+    color: var(--pico-primary-inverse);
+    border-radius: 2rem;
+    text-wrap: nowrap;
 }
 
 header nav details summary {
@@ -202,10 +211,6 @@ header nav details.dropdown > summary + ul.align {
 
 header nav .brand {
     flex-grow: 1;
-}
-
-header nav {
-    align-items: center;
 }
 
 header nav .brand a,
@@ -372,6 +377,15 @@ dialog button {
     box-shadow: none;
     border: none;
     padding: 0.5rem;
+}
+
+dialog button[type=reset] {
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+dialog button[type=reset]:hover {
+    background-color: var(--pico-muted-background-color);
 }
 
 dialog input {
@@ -808,12 +822,6 @@ footer.cms-content a:hover {
 
 footer.cms-content :focus-visible {
     outline-color: #FFFFFF;
-}
-
-header nav button,
-header nav a {
-    min-width: 2.75rem;
-    min-height: 2.75rem;
 }
 
 @media screen and (min-width: 768px) {
