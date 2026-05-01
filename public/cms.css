@@ -717,7 +717,14 @@ footer.copyright {
     padding: 6rem 2rem 3rem;
     border-radius: 3rem 3rem 0 0;
     margin-top: 3rem;
-    text-align: center;
+}
+
+footer.copyright .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer.cms-content + footer.copyright {
@@ -735,7 +742,7 @@ footer.copyright .brand {
 }
 
 footer.copyright .brand img {
-    height: 3rem;
+    height: 7.5rem;
     filter: brightness(0) invert(1);
     vertical-align: middle;
     opacity: 0.5;
