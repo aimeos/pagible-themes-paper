@@ -545,7 +545,7 @@ img {
     display: inline-block;
     text-decoration: none;
     vertical-align: sub;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     margin: 0.5rem 0;
     font-size: 1.125rem;
     font-weight: 400;
@@ -602,16 +602,14 @@ img {
     border-radius: 1.5rem;
 }
 
-@media screen and (min-width: 576px) {
-    .image picture,
-    .video video {
-        display: block;
-        background-color: var(--pico-contrast-inverse);
-        border: 1px solid var(--pico-muted-border-color);
-        border-radius: 2rem;
-        padding: 1rem;
-        box-shadow: var(--pico-box-shadow);
-    }
+.image picture,
+.video video {
+    display: block;
+    background-color: var(--pico-contrast-inverse);
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: var(--pico-box-shadow);
 }
 
 .caption:not(:empty) {
