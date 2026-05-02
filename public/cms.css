@@ -190,7 +190,7 @@ header nav > ul > li:last-of-type a {
 
 header nav a,
 header nav details summary {
-    font-size: 75%;
+    font-size: calc(var(--pico-font-size) * 0.875);
     list-style: none;
     cursor: pointer;
     padding: 0.5rem;
@@ -513,27 +513,27 @@ h4, h5, h6 {
 
 h1 {
     --pico-typography-spacing-vertical: 2rem;
-    font-size: calc(var(--pico-font-size) * 2.25);
+    font-size: calc(var(--pico-font-size) * 3);
     line-height: 1.1;
     text-align: center;
 }
 
 h2 {
     --pico-typography-spacing-vertical: 1.5rem;
-    font-size: calc(var(--pico-font-size) * 1.875);
+    font-size: calc(var(--pico-font-size) * 2.25);
     line-height: 1.15;
     text-align: center;
 }
 
 h3 {
     --pico-typography-spacing-vertical: 1.25rem;
-    font-size: calc(var(--pico-font-size) * 1.125);
+    font-size: calc(var(--pico-font-size) * 1.25);
     line-height: 1.3;
 }
 
 h4 {
     --pico-typography-spacing-vertical: 1rem;
-    font-size: var(--pico-font-size);
+    font-size: calc(var(--pico-font-size) * 1.125);
     line-height: 1.35;
 }
 
@@ -548,7 +548,7 @@ img {
     vertical-align: sub;
     padding: 0.5rem 2rem;
     margin: 0.5rem 0;
-    font-size: var(--pico-font-size);
+    font-size: calc(var(--pico-font-size) * 1.125);
     font-weight: 400;
     font-family: var(--pico-font-family-display);
     letter-spacing: 0;
@@ -844,11 +844,11 @@ footer.cms-content :focus-visible {
 
 @media screen and (min-width: 768px) {
     h1 {
-        font-size: calc(var(--pico-font-size) * 3.25);
+        font-size: calc(var(--pico-font-size) * 4.5);
     }
 
     h2 {
-        font-size: calc(var(--pico-font-size) * 2.25);
+        font-size: calc(var(--pico-font-size) * 3);
     }
 
     footer.cms-content .cards .card-list {

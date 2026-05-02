@@ -39,14 +39,14 @@
 }
 
 .cards .title {
-    font-size: calc(var(--pico-font-size) * 1.125);
+    font-size: calc(var(--pico-font-size) * 1.25);
     margin: 1rem 0 0.75rem;
     font-weight: 400;
 }
 
 .cards .text {
     color: var(--pico-muted-color);
-    font-size: calc(var(--pico-font-size) * 0.9375);
+    font-size: var(--pico-font-size);
     font-weight: 300;
     line-height: 1.6;
 }
