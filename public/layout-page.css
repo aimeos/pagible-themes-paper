@@ -45,7 +45,7 @@
 .text {
     font-weight: 300;
     color: var(--pico-muted-color);
-    font-size: 1.125rem;
+    font-size: var(--pico-font-size);
     line-height: 1.8;
 }
 
