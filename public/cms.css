@@ -3,32 +3,8 @@
  * @license MIT, https://opensource.org/license/MIT
  */
 
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: url('fonts/inter-300.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('fonts/inter-400.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url('fonts/inter-500.woff2') format('woff2');
-}
-
 :root, :root:not([data-theme=dark]) {
-    --pico-font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --pico-font-family-sans-serif:  "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Arial, sans-serif;
     --pico-font-family-display: var(--pico-font-family-sans-serif);
     --pico-font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
     --pico-nav-breadcrumb-divider: '/';
