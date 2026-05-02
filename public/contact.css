@@ -29,7 +29,7 @@
 
 .contact input, textarea {
     border: 1px solid var(--pico-contrast-border);
-    background-color: #FFFFFF;
+    background-color: var(--pico-contrast-inverse);
     color: var(--pico-color);
     resize: vertical;
     font-size: 1rem;
@@ -90,11 +90,11 @@
 .contact button:has(.success:not(.hidden)) {
     background-color: #16A34A;
     border-color: #16A34A;
-    color: #FFFFFF;
+    color: var(--pico-contrast-inverse);
 }
 
 .contact button:has(.failure:not(.hidden)) {
     background-color: #DC2626;
     border-color: #DC2626;
-    color: #FFFFFF;
+    color: var(--pico-contrast-inverse);
 }

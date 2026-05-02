@@ -75,10 +75,10 @@
 
 .hero .image picture,
 .hero .image img {
-    background-color: #FFFFFF;
+    background-color: var(--pico-contrast-inverse);
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 1.5rem;
-    box-shadow: 0 1.25rem 3.75rem -0.9375rem rgba(0, 0, 0, 0.05);
+    box-shadow: var(--pico-box-shadow);
     padding: 0.5rem;
 }
 

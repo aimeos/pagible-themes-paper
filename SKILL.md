@@ -6,7 +6,6 @@ metadata:
   author: Aimeos
 ---
 
-<!-- TYPEUI_SH_MANAGED_START -->
 # Paper Theme Design System
 
 ## Mission
@@ -25,9 +24,8 @@ Warm, minimal, print-inspired. Off-white textured background (#F7F7F4) with diag
 - Components: hero, cards (1->2->3 col grid), blog (featured+list), questions/FAQ (details/summary accordion), contact form (pill inputs), toc, slideshow, article, search dialog, docs sidebar (20rem, sticky), dark footer with 3rem top radius
 - Buttons: pill-shaped (9999px radius), primary=dark bg (#1A1A1A), secondary=white bg with border
 
-
 ## Accessibility
-WCAG 2.2 AA. Skip-to-content link. Focus: 3px solid contrast, offset 3px. Min touch target: 2.75rem. prefers-reduced-motion respected. Semantic HTML (nav aria-label, dialog, details). RTL support in docs layout.
+WCAG 2.2 AA. Skip-to-content link. Focus: 3px solid contrast, offset 3px. Min touch target: 2.25rem. prefers-reduced-motion respected. Semantic HTML (nav aria-label, dialog, details). RTL support.
 
 ## Writing Tone
 concise, confident, helpful
@@ -86,5 +84,3 @@ When generating design-system guidance, use this structure:
 - Use "must" for non-negotiable rules and "should" for recommendations.
 - Pair every do-rule with at least one concrete don't-example.
 - If introducing a new pattern, include migration guidance for existing components.
-
-<!-- TYPEUI_SH_MANAGED_END -->

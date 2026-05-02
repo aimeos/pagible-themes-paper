@@ -4,8 +4,11 @@
 
 @media screen and (min-width: 576px) {
     .swiffy-slider {
+        background-color: var(--pico-contrast-inverse);
         border: 1px solid var(--pico-muted-border-color);
         border-radius: 2rem;
+        padding: 1rem;
+        box-shadow: var(--pico-box-shadow);
         overflow: hidden;
     }
 }

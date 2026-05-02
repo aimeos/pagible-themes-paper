@@ -22,7 +22,7 @@
 
 .cards .card-item {
     padding: 2rem;
-    background-color: #FFFFFF;
+    background-color: var(--pico-contrast-inverse);
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 2rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);

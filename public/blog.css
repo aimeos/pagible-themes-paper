@@ -21,7 +21,7 @@
 
 .blog .blog-item {
     --pico-text-decoration: none;
-    background-color: #FFFFFF;
+    background-color: var(--pico-contrast-inverse);
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 2rem;
     overflow: hidden;
