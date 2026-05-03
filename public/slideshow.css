@@ -3,7 +3,7 @@
  */
 
 .slider-container {
-	border-radius: var(--pico-border-radius);
+	border-radius: calc(var(--pico-border-radius) * 2);
 }
 
 .swiffy-slider {
