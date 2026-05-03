@@ -83,7 +83,7 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    background-color: var(--pico-card-background-color, #FFFFFF);
+    background-color: var(--pico-primary-inverse, #FFFFFF);
     border: 1px solid var(--pico-muted-border-color);
     border-radius: var(--pico-border-radius);
     box-shadow: var(--pico-box-shadow);
