@@ -159,7 +159,7 @@ nav li :where(a,[role=link]) {
 body > header {
     max-width: 1280px;
     border-bottom: none;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
     position: relative;
     margin: auto;
     z-index: 10;
@@ -181,10 +181,10 @@ header nav > ul:not(.menu) > li {
 }
 
 header nav > ul > li:last-of-type a {
-    background-color: var(--pico-primary);
     color: var(--pico-primary-inverse);
-    padding: 0.5rem 1rem;
+    background-color: var(--pico-primary);
     border-radius: calc(var(--pico-border-radius) * 4);
+    padding: 0.625rem 1rem;
     text-wrap: nowrap;
 }
 
@@ -604,6 +604,7 @@ img {
 }
 
 .image picture,
+picture.image,
 .video video {
     display: block;
     background-color: var(--pico-contrast-inverse);
