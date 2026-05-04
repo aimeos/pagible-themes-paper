@@ -10,20 +10,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 6rem;
-    padding-bottom: 8rem;
+    padding-top: 6rem 0;
 }
 
 .hero .first {
     text-align: center;
-    max-width: 56.25rem;
     margin: auto;
 }
 
 .hero .second {
     display: block;
     width: 100%;
-    max-width: 64rem;
     margin: auto;
 }
 
@@ -73,12 +70,12 @@
     margin: 0.5rem 0.25rem;
 }
 
-.hero .image {
+.hero picture {
     margin-top: 3rem;
 }
 
-.hero .image picture,
-.hero .image img {
+.hero .second picture,
+.hero .second img {
     background-color: var(--pico-contrast-inverse);
     border: 1px solid var(--pico-muted-border-color);
     border-radius: calc(var(--pico-border-radius) * 3);
