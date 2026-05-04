@@ -77,13 +77,15 @@
 .hero .second picture {
     background-color: var(--pico-contrast-inverse);
     border: 1px solid var(--pico-muted-border-color);
-    border-radius: calc(var(--pico-border-radius) * 3);
+    border-radius: calc(var(--pico-border-radius) * 2);
     box-shadow: var(--pico-box-shadow);
-    padding: 0.5rem;
     margin-top: 3rem;
+    padding: 0.5rem;
+    display: block;
 }
 
 .hero .second img {
+    border-radius: var(--pico-border-radius);
     display: block;
     margin: auto;
 }
