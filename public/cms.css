@@ -189,12 +189,14 @@ header nav > ul > li:last-of-type a {
 }
 
 header nav a,
-header nav details summary {
-    font-size: calc(var(--pico-font-size) * 0.875);
+header nav details.dropdown > summary {
+    display: flex;
+    align-items: center;
     list-style: none;
     cursor: pointer;
     padding: 0.5rem;
     color: var(--pico-color);
+    font-size: calc(var(--pico-font-size) * 0.875);
 }
 
 header nav a,
@@ -208,16 +210,8 @@ header nav details summary::-webkit-details-marker {
 }
 
 header nav details.dropdown > summary::after {
-    display: block;
-    height: 1.25rem;
+    background-size: var(--pico-font-size) auto;
     float: inline-end;
-    transform: rotate(0) translateX(.2rem);
-    background-image: var(--pico-icon-chevron);
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: 1rem auto;
-    margin-inline-start: 0;
-    content: "";
 }
 
 header nav details[open] summary::after {

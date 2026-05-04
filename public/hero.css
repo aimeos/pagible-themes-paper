@@ -74,13 +74,18 @@
     margin-top: 3rem;
 }
 
-.hero .second picture,
-.hero .second img {
+.hero .second picture {
     background-color: var(--pico-contrast-inverse);
     border: 1px solid var(--pico-muted-border-color);
     border-radius: calc(var(--pico-border-radius) * 3);
     box-shadow: var(--pico-box-shadow);
     padding: 0.5rem;
+    margin-top: 3rem;
+}
+
+.hero .second img {
+    display: block;
+    margin: auto;
 }
 
 @media screen and (min-width: 576px) {
