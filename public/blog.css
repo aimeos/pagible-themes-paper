@@ -23,9 +23,9 @@
     --pico-text-decoration: none;
     background-color: var(--pico-contrast-inverse);
     border: 1px solid var(--pico-muted-border-color);
-    border-radius: calc(var(--pico-border-radius) * 4);
-    overflow: hidden;
+    border-radius: calc(var(--pico-border-radius) * 2);
     transition: box-shadow 0.2s ease;
+    overflow: hidden;
 }
 
 .blog .blog-item:hover {
