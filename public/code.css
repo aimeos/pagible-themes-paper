@@ -26,3 +26,11 @@ pre:has(code[class*="language-"]) {
     padding: 1.5rem;
     border: 1px solid var(--pico-muted-border-color);
 }
+
+.code {
+    background-color: var(--pico-contrast-inverse);
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: calc(var(--pico-border-radius) * 2);
+    padding: 1rem;
+    box-shadow: var(--pico-box-shadow);
+}

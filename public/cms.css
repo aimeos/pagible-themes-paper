@@ -176,7 +176,7 @@ header nav > ul > li:last-of-type a {
     color: var(--pico-primary-inverse);
     background-color: var(--pico-primary);
     border-radius: calc(var(--pico-border-radius) * 4);
-    padding: 0.625rem 1rem;
+    padding: 0.5rem 1rem;
     text-wrap: nowrap;
 }
 
@@ -505,7 +505,7 @@ h1 {
 h2 {
     --pico-typography-spacing-vertical: 1.5rem;
     font-size: calc(var(--pico-font-size) * 1.6);
-    line-height: 1.15;
+    line-height: 1.2;
     text-align: center;
 }
 
@@ -518,7 +518,7 @@ h3 {
 h4 {
     --pico-typography-spacing-vertical: 1rem;
     font-size: calc(var(--pico-font-size) * 0.8);
-    line-height: 1.35;
+    line-height: 1.4;
 }
 
 img {
@@ -529,7 +529,7 @@ img {
     display: inline-block;
     text-decoration: none;
     vertical-align: sub;
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
     margin: 0.5rem 0;
     line-height: inherit;
     font-family: var(--pico-font-family-display);
