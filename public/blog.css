@@ -27,6 +27,7 @@
     transition: box-shadow 0.2s ease;
     padding: 0.5rem;
     display: block;
+    height: 100%;
 }
 
 .blog .blog-item:hover {
@@ -73,6 +74,7 @@
 
 .blog .first h3 {
     flex-grow: 1;
+    margin: 0;
 }
 
 .blog .second .blog-item {
