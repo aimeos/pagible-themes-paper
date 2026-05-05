@@ -48,9 +48,9 @@
 }
 
 .blog h3 {
-    font-weight: 400;
+    margin: 0;
     margin-top: 0.75rem;
-    height: 3.75rem;
+    font-weight: 400;
 }
 
 .blog .first .content {
@@ -74,7 +74,6 @@
 
 .blog .first h3 {
     flex-grow: 1;
-    margin: 0;
 }
 
 .blog .second .blog-item {
@@ -93,7 +92,6 @@
 
 .blog .second h3 {
     font-size: calc(var(--pico-font-size) * 0.75);
-    margin: 0;
 }
 
 @media (min-width: 768px) {
