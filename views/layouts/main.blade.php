@@ -107,7 +107,7 @@
             </article>
         </dialog>
         <header>
-            <nav>
+            <nav role="navigation" aria-label="{{ __('Main navigation') }}">
                 <ul>
                     <li class="sidebar-open show">
                         <button aria-label="{{ __('Open sidebar') }}">

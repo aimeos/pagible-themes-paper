@@ -264,6 +264,8 @@ footer.cms-content .cards .text a,
 footer.cms-content .cards .text a:visited {
     color: #FFFFFFCC;
     text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
 }
 
 footer.cms-content .cards .text a:hover {
