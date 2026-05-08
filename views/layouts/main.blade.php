@@ -230,7 +230,8 @@
         </footer>
 
 
-        <link href="{{ cmstheme($page, 'pico.modal.min.css') }}" rel="stylesheet">
+        <link href="{{ cmstheme($page, 'pico.modal.min.css') }}" rel="preload" as="style">
+        <link href="{{ cmstheme($page, 'cms-lazy.css') }}" rel="preload" as="style">
         <script defer src="{{ cmstheme($page, 'cms.js') }}"></script>
         @stack('foot')
 
