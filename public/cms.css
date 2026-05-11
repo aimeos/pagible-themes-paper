@@ -234,20 +234,6 @@ header nav .sidebar-close button {
     border: none;
 }
 
-header nav .menu a[role=menuitem] {
-    background-color: var(--pico-contrast);
-    color: var(--pico-contrast-inverse);
-    border-color: var(--pico-contrast);
-    border-radius: 9999px;
-    margin-inline-start: 0;
-}
-
-header nav .menu a[role=menuitem]:hover {
-    background-color: var(--pico-contrast-hover);
-    border-color: var(--pico-contrast-hover);
-    color: var(--pico-contrast-inverse);
-}
-
 @media (max-width: 991px) {
     header nav .menu-open.show,
     header nav .menu-close.show {
