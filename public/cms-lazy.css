@@ -215,21 +215,18 @@ footer.cms-content .cards .title {
     letter-spacing: 0.05em;
 }
 
-footer.cms-content .cards :is(.text, .cms-text) {
+footer.cms-content .cards .text {
     color: #FFFFFFCC;
     font-weight: 300;
 }
 
-footer.cms-content .cards :is(.text, .cms-text) p {
+footer.cms-content .cards .text p {
     line-height: 1.75;
     margin: 0;
 }
 
-footer.cms-content .cards :is(.text, .cms-text) a,
-footer.cms-content .cards :is(.text, .cms-text) a:visited,
-footer.cms-content .cards :is(.text, .cms-text) a:hover,
-footer.cms-content .cards :is(.text, .cms-text) a:focus,
-footer.cms-content .cards :is(.text, .cms-text) a:active {
+footer.cms-content .cards .text a,
+footer.cms-content .cards .text a:visited {
     color: #FFFFFFCC;
     text-decoration: none;
     display: inline-block;
@@ -237,7 +234,7 @@ footer.cms-content .cards :is(.text, .cms-text) a:active {
     font-size: calc(var(--pico-font-size) * 0.8);
 }
 
-footer.cms-content .cards :is(.text, .cms-text) a:hover {
+footer.cms-content .cards .text a:hover {
     color: #FFFFFFA6;
     transition: color 0.15s ease;
 }
