@@ -12,7 +12,7 @@
     justify-self: center;
     max-width: 50rem;
     gap: var(--cards-gap);
-    margin-block: var(--cards-gap);
+    margin-block: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -70,8 +70,7 @@
 
 .cards .card-item > picture {
     display: block;
-    line-height: 0;
-    margin: -2rem -2rem 0;
+    padding: 0;
 }
 
 .cards .title {

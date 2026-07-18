@@ -181,6 +181,7 @@ footer.cms-content {
 
 footer.cms-content .container {
     max-width: 1280px;
+    padding: 0;
 }
 
 footer.cms-content .cards .card-list {
