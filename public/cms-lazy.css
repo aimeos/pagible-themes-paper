@@ -214,7 +214,6 @@ footer.cms-content .cards .card-item:hover {
 footer.cms-content .cards .title {
     color: #9CA3AF;
     font-size: calc(var(--pico-font-size) * 0.65);
-    margin-bottom: 1.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
