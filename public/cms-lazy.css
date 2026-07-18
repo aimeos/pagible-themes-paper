@@ -185,7 +185,10 @@ footer.cms-content .container {
 
 footer.cms-content .cards .card-list {
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+}
+
+footer.cms-content .cards {
+    --cards-gap: 3rem;
 }
 
 @media screen and (min-width: 768px) {

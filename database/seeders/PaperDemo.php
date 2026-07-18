@@ -551,8 +551,8 @@ class PaperDemo extends AbstractDemo
             $cards = [
                 ['title' => 'Journal', 'text' => "- [Current issue](/journal)\n- [About the journal](/about)"],
                 ['title' => 'Contribute', 'text' => "- [Contributor guide](/contribute)\n- [Pitching a story](/contribute/pitching-a-story)\n- [Write to the editors](/about#contact)"],
-                ['title' => 'Subscribe', 'text' => '[Online and print options](/subscribe)'],
-                ['title' => 'Margin & Matter', 'text' => '[editors@marginandmatter.example](mailto:editors@marginandmatter.example)'],
+                ['title' => 'Subscribe', 'text' => '- [Online and print options](/subscribe)'],
+                ['title' => 'Margin & Matter', 'text' => '- [editors@marginandmatter.example](mailto:editors@marginandmatter.example)'],
             ];
 
             $element = Element::forceCreate( [

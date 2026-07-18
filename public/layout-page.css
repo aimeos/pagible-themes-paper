@@ -11,7 +11,7 @@
     padding: 3rem min(5%, 2rem);
 }
 
-.cms-content > :nth-child(even) {
+main .cms-content > :nth-child(even) {
     background-color: #FFFFFF80;
 }
 
