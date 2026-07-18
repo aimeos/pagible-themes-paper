@@ -94,6 +94,7 @@ class PaperDemo extends AbstractDemo
                     ['title' => 'Specific before sweeping', 'text' => 'A well-observed room, tool, or routine can hold a larger argument without announcing one too soon.'],
                     ['title' => 'Useful expertise', 'text' => 'We ask practitioners how things work, what they cost, where they fail, and what experience has changed.'],
                     ['title' => 'A lasting page', 'text' => 'We edit for clarity and rhythm, then publish without pop-ups, autoplay, or a race to keep the reader clicking.'],
+                    ['title' => 'Room for the reader', 'text' => 'We leave space for attention, uncertainty, and conclusions that arrive through the reporting rather than before it.'],
                 ],
             ]],
             ['id' => Utils::uid(), 'type' => 'slideshow', 'group' => 'main', 'data' => [
@@ -109,7 +110,7 @@ class PaperDemo extends AbstractDemo
                 'title' => 'Masthead',
             ]],
             ['id' => Utils::uid(), 'type' => 'table', 'group' => 'main', 'data' => [
-                'header' => 'row',
+                'header' => 'row+col',
                 'table' => [
                     ['Role', 'Name', 'Based in'],
                     ['Editor', 'Clara Voss', 'Hamburg'],
@@ -188,7 +189,7 @@ class PaperDemo extends AbstractDemo
             ]],
             ['id' => Utils::uid(), 'type' => 'table', 'group' => 'main', 'data' => [
                 'title' => 'The room in four decisions',
-                'header' => 'row',
+                'header' => 'row+col',
                 'table' => [
                     ['Decision', 'What it changes'],
                     ['Low shelves at the centre', 'Readers can see the room, the harbour, and one another'],
@@ -223,6 +224,7 @@ class PaperDemo extends AbstractDemo
                     ['title' => 'Joints come apart', 'text' => 'Pinned mortise-and-tenon joints can be opened by a repairer without cutting away sound timber.', 'file' => ['id' => $this->img( 'craft' ), 'type' => 'file']],
                     ['title' => 'Surfaces can age', 'text' => 'Soap and oil finishes accept a local repair. A scratch becomes maintenance, not a reason to strip the chair.', 'file' => ['id' => $this->img( 'chair' ), 'type' => 'file']],
                     ['title' => 'Parts remain legible', 'text' => 'A mark beneath the seat records the timber, year, finish, and dimensions of replaceable pieces.', 'file' => ['id' => $this->img( 'tools' ), 'type' => 'file']],
+                    ['title' => 'Knowledge stays nearby', 'text' => 'Drawings, jigs, and spare timber remain in the workshop so a future maker can repeat the repair.', 'file' => ['id' => $this->img( 'studio' ), 'type' => 'file']],
                 ],
             ]],
             ['id' => Utils::uid(), 'type' => 'heading', 'group' => 'main', 'data' => [
@@ -268,7 +270,7 @@ class PaperDemo extends AbstractDemo
             ]],
             ['id' => Utils::uid(), 'type' => 'table', 'group' => 'main', 'data' => [
                 'title' => 'One route, many kinds of work',
-                'header' => 'row',
+                'header' => 'row+col',
                 'table' => [
                     ['Time', 'Stop', 'What changes'],
                     ['00:42', 'Central station', 'The last train empties into the night network'],
@@ -315,6 +317,7 @@ class PaperDemo extends AbstractDemo
                     ['title' => 'Its state is visible', 'text' => 'You can tell what it is doing, what changed, and how to return to a known position.'],
                     ['title' => 'Wear improves understanding', 'text' => 'Marks reveal where hands rest, edges meet, and maintenance will eventually be needed.'],
                     ['title' => 'Skill remains portable', 'text' => 'What you learn belongs to the practice, not only to one model, account, or subscription.'],
+                    ['title' => 'Maintenance is expected', 'text' => 'Cleaning, sharpening, adjustment, and repair are part of the object rather than evidence that it has failed.'],
                 ],
             ]],
             ['id' => Utils::uid(), 'type' => 'image', 'group' => 'main', 'data' => [
@@ -362,11 +365,12 @@ class PaperDemo extends AbstractDemo
                     ['title' => 'Reported features', 'text' => '1,800–3,000 words built from observation, interviews, and a clear central question.'],
                     ['title' => 'Field notes', 'text' => '600–1,000 words from one revealing visit, object, routine, or small piece of research.'],
                     ['title' => 'Photo essays', 'text' => 'A coherent visual argument of 10–16 images, accompanied by captions and a short introduction.'],
+                    ['title' => 'Interviews', 'text' => 'Edited conversations that make a practitioner’s methods, decisions, and experience useful to the reader.'],
                 ],
             ]],
             ['id' => Utils::uid(), 'type' => 'table', 'group' => 'main', 'data' => [
                 'title' => 'Commissioning terms',
-                'header' => 'row',
+                'header' => 'row+col',
                 'table' => [
                     ['Format', 'Typical scope', 'Fee from'],
                     ['Reported feature', '1,800–3,000 words', '€900'],
@@ -413,7 +417,7 @@ class PaperDemo extends AbstractDemo
             ]],
             ['id' => Utils::uid(), 'type' => 'table', 'group' => 'main', 'data' => [
                 'title' => 'What an editor needs',
-                'header' => 'row',
+                'header' => 'row+col',
                 'table' => [
                     ['Part', 'Useful detail'],
                     ['Opening', 'The scene, person, or discovery that makes the story tangible'],
@@ -422,9 +426,6 @@ class PaperDemo extends AbstractDemo
                     ['Shape', 'A likely narrative route and the approximate length'],
                     ['Contributor', 'Relevant experience and two links that show how you work'],
                 ],
-            ]],
-            ['id' => Utils::uid(), 'type' => 'html', 'group' => 'main', 'data' => [
-                'text' => '<aside><strong>Send the story you can report, not the subject you would like someone else to assign.</strong></aside>',
             ]],
             ['id' => Utils::uid(), 'type' => 'heading', 'group' => 'main', 'data' => [
                 'level' => 2,
@@ -548,9 +549,10 @@ class PaperDemo extends AbstractDemo
         if( !isset( $this->element ) )
         {
             $cards = [
-                ['title' => 'Journal', 'text' => "- [Current issue](/journal)\n- [About the journal](/about)\n- [Subscribe](/subscribe)"],
+                ['title' => 'Journal', 'text' => "- [Current issue](/journal)\n- [About the journal](/about)"],
                 ['title' => 'Contribute', 'text' => "- [Contributor guide](/contribute)\n- [Pitching a story](/contribute/pitching-a-story)\n- [Write to the editors](/about#contact)"],
-                ['title' => 'Margin & Matter', 'text' => "Independent stories about design, craft, place, and working life.\n\n[editors@marginandmatter.example](mailto:editors@marginandmatter.example)"],
+                ['title' => 'Subscribe', 'text' => '[Online and print options](/subscribe)'],
+                ['title' => 'Margin & Matter', 'text' => '[editors@marginandmatter.example](mailto:editors@marginandmatter.example)'],
             ];
 
             $element = Element::forceCreate( [
@@ -635,6 +637,7 @@ class PaperDemo extends AbstractDemo
                     ['title' => 'Design', 'text' => "A coastal library shaped around daylight, patience, and the private act of reading.\n\n[Read the story](/rooms-that-teach-us-how-to-look)", 'file' => ['id' => $this->img( 'library' ), 'type' => 'file']],
                     ['title' => 'Craft', 'text' => "A furniture maker designs every chair with its future repair—and its next owner—in mind.\n\n[Visit the workshop](/a-chair-made-for-the-next-owner)", 'file' => ['id' => $this->img( 'chair' ), 'type' => 'file']],
                     ['title' => 'Place', 'text' => "After the trains stop, the night bus becomes transport, shelter, and one of the city's last public rooms.\n\n[Take the night route](/the-night-bus-as-a-public-room)", 'file' => ['id' => $this->img( 'transit' ), 'type' => 'file']],
+                    ['title' => 'Practice', 'text' => "Why familiar tools often improve by receding from view and leaving more room for judgement.\n\n[Consider the tools we keep](/why-good-tools-grow-quiet)", 'file' => ['id' => $this->img( 'desk' ), 'type' => 'file']],
                 ],
             ]],
             ['id' => Utils::uid(), 'type' => 'image-text', 'group' => 'main', 'data' => [
@@ -646,7 +649,7 @@ class PaperDemo extends AbstractDemo
             ['id' => Utils::uid(), 'type' => 'blog', 'group' => 'main', 'data' => [
                 'title' => 'From Issue 07',
                 'layout' => 'cards',
-                'limit' => 3,
+                'limit' => 2,
                 'order' => '_lft',
                 'parent-page' => ['value' => $journalId, 'label' => 'Journal'],
             ]],

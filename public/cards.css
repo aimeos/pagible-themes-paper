@@ -56,7 +56,10 @@
 }
 
 .cards .card-item img {
+    aspect-ratio: 5 / 3;
     border-radius: calc(var(--pico-border-radius) * 2);
+    object-fit: cover;
+    width: 100%;
 }
 
 .cards .title {
